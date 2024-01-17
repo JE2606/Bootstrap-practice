@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+.header--img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+main {
+    min-height: 100dvh;
+}
+
+.main--img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.up {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    animation: flotar 2s ease-in-out infinite;
+}
+
+@keyframes flotar {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
